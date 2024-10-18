@@ -75,13 +75,11 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ## Urgency
 
-::: {layout-ncol="2"}
+
 
 <iframe src="img/infographics/patient urgency/index.html" width="100%" height="300px" style="border:none;"></iframe>
 
-<iframe src="img/infographics/patient urgency/index.html" width="100%" height="300px" style="border:none;"></iframe>
 
-:::
 
 
 
