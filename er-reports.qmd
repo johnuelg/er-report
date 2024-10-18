@@ -45,6 +45,8 @@ Percentage of Non-Urgent Visits: 30%
 Percentage of Urgent Visits: 70%
 Average Wait Time (Door to Doctor): 20 minutes
 
+Notice that the code chunks are folded by default. You can adjust this behavior with the `code-fold` option in the document's YAML header.
+
 
 ```{r, warning=F, message=F, echo=FALSE}
 library(tidyverse) 
@@ -54,51 +56,24 @@ library(patchwork)
 ```
 
 
-
 :::{.callout}
 By the way, you should open the code chunk that is folded above. ⬆️
 There is a little stunning surprise on its right hand side.
 :::
 
 
-::: {.panel-tabset .nav-pills}
+## ER Time Series
 
-## Patients Volume
-
-This is a good old scatterplot of the iris dataset. If you want to learn more about how to make graphs in R, visit my [R graph gallery](https://www.r-graph-gallery.com)!
-
-
-```{r, fig.align='center', fig.width=6, fig.height=6, fig.align='left', echo=FALSE}
-
-```
-
-
-## Urgency
+I strongly advise to create a dataviz theme that fits your company's brand. Here is one:
 
 
 
-<iframe src="img/infographics/patient urgency/index.html" width="100%" height="300px" style="border:none;"></iframe>
+And now let's use it on a graph:
 
 
 
 
-
-## CTAS Level
-
-You can also make a [boxplot](https://r-graph-gallery.com/89-box-and-scatter-plot-with-ggplot2.html), but please do not hide the underlying distribution! This is widely explain in my data-to-viz.com project in case you're not convinced 😋. Check the next tab to get convinced!
-
-<iframe src="interactive/ctas_month_waffle.html" width="100%" height="600px" style="border:none;"></iframe>
-
-## 24 Hour Clock
-See what's happening now that the individual data points are visible! Would be a shame to miss this.
-
-<iframe src="interactive/24clocktime.html" width="100%" height="600px" style="border:none;"></iframe>
-
-
-:::
-
-
-## ER Traffic
+## Patient Traffic
 
 For a complete list of features, [visit the documentation](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)!
 
@@ -107,13 +82,16 @@ Oh and since we're here, did you know you can easily include a full width intera
 #| column: screen
 #| out-width: 100%
 
-# Load the library.
-library(leaflet)
-
-# Make a map
-leaflet() %>%
-  addTiles() %>% # Add default OpenStreetMap map tiles
-  addMarkers(lng = 174.768, lat = -36.852, popup = "The birthplace of R")
+htmltools::tags$div(
+  style = "position: relative; width: 100%; height: 100%; overflow: hidden;",
+  htmltools::tags$iframe(
+    src = "interactive/patients_traffic.html", 
+    style = "position: absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0; overflow: hidden;", 
+    scrolling = "no",  # Disable scrolling
+    allowfullscreen = NA,
+    frameBorder = "0"
+  )
+)
 ```
 
 
