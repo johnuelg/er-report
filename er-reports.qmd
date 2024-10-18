@@ -37,13 +37,12 @@ Analyze patterns in patient visits over time to identify peak hours, seasonal va
 
 Key Metrics:
 
-Key Metrics
-Total Patient Visits: 12,500
-Average Daily Visits: 139
-Peak Hour: 5 PM – 8 PM
-Percentage of Non-Urgent Visits: 30%
-Percentage of Urgent Visits: 70%
-Average Wait Time (Door to Doctor): 20 minutes
+- Total Patient Visits: 12,500
+- Average Daily Visits: 139
+- Peak Hour: 5 PM – 8 PM
+- Percentage of Non-Urgent Visits: 30%
+- Percentage of Urgent Visits: 70%
+- Average Wait Time (Door to Doctor): 20 minutes
 
 Notice that the code chunks are folded by default. You can adjust this behavior with the `code-fold` option in the document's YAML header.
 
@@ -59,6 +58,45 @@ library(patchwork)
 :::{.callout}
 By the way, you should open the code chunk that is folded above. ⬆️
 There is a little stunning surprise on its right hand side.
+:::
+
+
+::: {.panel-tabset .nav-pills}
+
+## Patients Volume
+
+This is a good old scatterplot of the iris dataset. If you want to learn more about how to make graphs in R, visit my [R graph gallery](https://www.r-graph-gallery.com)!
+
+
+```{r, fig.align='center', fig.width=6, fig.height=6, fig.align='left', echo=FALSE}
+
+```
+
+
+## Urgency
+
+::: {layout-ncol="2"}
+
+<iframe src="interactive/patient urgency/index.html" width="100%" height="300px" style="border:none;"></iframe>
+<iframe src="interactive/ctas_month_waffle.html" width="100%" height="600px" style="border:none;"></iframe>
+
+
+:::
+
+
+
+## CTAS Level
+
+You can also make a [boxplot](https://r-graph-gallery.com/89-box-and-scatter-plot-with-ggplot2.html), but please do not hide the underlying distribution! This is widely explain in my data-to-viz.com project in case you're not convinced 😋. Check the next tab to get convinced!
+
+<iframe src="interactive/ctas_month_waffle.html" width="100%" height="600px" style="border:none;"></iframe>
+
+## 24 Hour Clock
+See what's happening now that the individual data points are visible! Would be a shame to miss this.
+
+<iframe src="interactive/24clocktime.html" width="100%" height="600px" style="border:none;"></iframe>
+
+
 :::
 
 
@@ -88,7 +126,7 @@ htmltools::tags$div(
     src = "interactive/patients_traffic.html", 
     style = "position: absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0; overflow: hidden;", 
     scrolling = "no",  # Disable scrolling
-    allowfullscreen = NA,
+    allowfullscreen = TRUE,
     frameBorder = "0"
   )
 )
