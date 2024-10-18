@@ -113,26 +113,10 @@ See what's happening now that the individual data points are visible! Would be a
 
 ## ER Timeseries
 
+ER Time Sries Code in Here...
 
+```{r, fig.width=9, fig.height=7, echo=FALSE}
 
-```{r, fig.width=9, fig.height=7}
-# Create scatter plot
-ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
-  geom_point(size = 3) +
-  scale_color_brand() +
-  
-  # Add title, subtitle, and caption (footer)
-  labs(
-    title = "Sepal Length vs Sepal Width",
-    subtitle = "The relationship between sepal length and sepal width is very strong inside\neach species. It's worth noting that Setosa is very different, with a higher\nsepal width and lower sepal length on average",
-    caption = "Author: Yan Holtz\nData: coming from the batch #23 on the 3rd of October"
-  ) +
-  
-  # Add annotation
-  annotate("text", x = 7.5, y = 4.2, label = "Highest Sepal Width", color = "red", size = 4, hjust = 0) +
-  
-  # Customize the theme (optional)
-  theme_brand()
 ```
 
 
@@ -141,7 +125,7 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
 For a complete list of features, [visit the documentation](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)!
 
 Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc? 😍
-```{r}
+```{r, echo=FALSE}
 #| column: screen
 #| out-width: 100%
 
