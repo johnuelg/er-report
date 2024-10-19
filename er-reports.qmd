@@ -80,7 +80,7 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 ## Urgency
 
 
-<iframe title="Embedded cell output" src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600" height="600" width="500"/>
+<iframe title="Embedded cell output" src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600" height="600" width="500" data-external="1"/>
 
 
 
