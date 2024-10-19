@@ -77,6 +77,10 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 ```
 
 
+
+<iframe title="Embedded cell output" src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600" style="height: 600px; width: 100%; position: absolute; clip: rect(50px, 600px, 550px, 50px); overflow: hidden; border: none; scrolling: no; display: block;" data-external="1"></iframe>
+
+
 ## Urgency
 
 <iframe
@@ -87,7 +91,8 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
   frameborder="0"
   scrolling="no"
   data-external="1"
-  style="border: none; position: absolute; clip: rect(0px, 800px, 500px, 0px); width: 100%;">
+  style="border: none; position: absolute;  
+  clip: rect(50px, 725px, 550px, 275px);">
 </iframe>
 
 
@@ -96,7 +101,7 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 You can also make a [boxplot](https://r-graph-gallery.com/89-box-and-scatter-plot-with-ggplot2.html), but please do not hide the underlying distribution! This is widely explain in my data-to-viz.com project in case you're not convinced 😋. Check the next tab to get convinced!
 
-<iframe src="./content/24clocktime.html" width="100%" height="500px" data-external="1"></iframe>
+<iframe src="./content/patient-urgency/index.html" width="100%" height="500px" data-external="1"></iframe>
 
 ## 24 Hour Clock
 See what's happening now that the individual data points are visible! Would be a shame to miss this.
