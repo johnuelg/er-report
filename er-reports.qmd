@@ -79,11 +79,14 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 ## Urgency
 
 
-
-```{=html}
-<iframe src="https://johnuelg.github.io/er-reports/docs/patient-urgency/index.html
-" width="100%" height="500px" data-external="1"></iframe>
+```{r}
+htmltools::includeHTML("https://johnuelg.github.io/er-reports/docs/patient-urgency/index.html")
 ```
+
+
+
+
+
 
 
 ## CTAS Level
