@@ -112,18 +112,25 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 
 ## Test III
+<iframe
+  title="Embedded cell output"
+  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600"
+  width="700"
+  height="600"
+  frameborder="0"
+  scrolling="no"
+  data-external="1"
+  style="clip-path: inset(8.33% 14.29% 8.33% 7.14%); float: left; margin: 0 20px 20px 40px;"
+></iframe>
 
-```markdown
-   ::: {.panel-tabset}
-   ## Visualization 1
-   {{< iframe src="content/24clocktime.html" width="100%" height="500px" data-external="1" >}}
 
-   ## Visualization 2
-   {{< iframe src="content/24clocktime.html" width="100%" height="500px" data-external="1" >}}
-   :::
-```
-
-
+## Test IV
+::: {.panel-tabset}
+## Visualization 1
+{{< iframe src="content/24clocktime.html" width="100%" height="500px" data-external="1" >}}
+## Visualization 2
+{{< iframe src="content/24clocktime.html" width="100%" height="500px" data-external="1" >}}
+:::
 
 ## Urgency
 
