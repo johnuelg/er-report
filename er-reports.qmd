@@ -85,7 +85,8 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
   height="600" 
   width="100%" 
   frameborder="0" 
-  scrolling="no" 
+  scrolling="no"
+  data-external="1"
   style="position:absolute; clip:rect(0px,1150px,500px,0px);width:100%">
 </iframe>
 
