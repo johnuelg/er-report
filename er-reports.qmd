@@ -3,6 +3,7 @@ title: "Monthly Emergency Room (ER) Report"
 subtitle: "This report analyzes the emergency room operations at Taif Children's Hospital for the month of September 2024. The focus of this month's report is on understanding peak hours of patient visits, volume, average wait times, triage levels and operational metrics. Recommendations will be provided based on these findings to help enhance patient care and operational efficiency."
 format:
   lumo-html:
+    embed-resources: true
     logo: "logo.png"                                     # Optional. Path to a logo displayed above the title
     primary-color: "#b5cef7"
     self-contained: true
@@ -78,11 +79,10 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ## Urgency
 
-
-```{r}
-htmltools::includeHTML("https://johnuelg.github.io/er-reports/docs/patient-urgency/index.html")
+```{=html}
+<iframe src="https://johnuelg.github.io/er-reports/docs/patient-urgency/index.html
+"width="100%" height="500px" data-external="1"></iframe>
 ```
-
 
 
 
