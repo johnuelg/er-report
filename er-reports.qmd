@@ -127,10 +127,13 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 ## Test IV
 ::: {.panel-tabset}
 ## Visualization 1
-{{< iframe src="content/24clocktime.html" width="100%" height="500px" data-external="1" >}}
+{{< iframe src="content/24clocktime.html" width="100%" height="500px" >}}
 ## Visualization 2
-{{< iframe src="content/24clocktime.html" width="100%" height="500px" data-external="1" >}}
+{{< iframe src="content/24clocktime.html" width="100%" height="500px" >}}
 :::
+## Test V
+{{< iframe src="content/24clocktime.html" width="100%" height="500px" >}}
+
 
 ## Urgency
 
