@@ -78,7 +78,7 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ## Urgency
 
-<iframe src="/interactive/patient urgency/index.html" width="100%" height="400px" data-external="1"></iframe>
+<iframe src="/docs/patient urgency/index.html" width="100%" height="400px" data-external="1"></iframe>
 
 
 
@@ -86,7 +86,7 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 You can also make a [boxplot](https://r-graph-gallery.com/89-box-and-scatter-plot-with-ggplot2.html), but please do not hide the underlying distribution! This is widely explain in my data-to-viz.com project in case you're not convinced 😋. Check the next tab to get convinced!
 
-<iframe src="/interactive/ctas_month_waffle.html" width="100%" height="500px" data-external="1"></iframe>
+<iframe src="/docs/interactive/ctas_month_waffle.html" width="100%" height="500px" data-external="1"></iframe>
 
 ## 24 Hour Clock
 See what's happening now that the individual data points are visible! Would be a shame to miss this.
@@ -109,7 +109,7 @@ viewof selectedFile = Inputs.select(
 )
 
 // Base path for HTML files
-basePath = "/interactive/"
+basePath = "docs/interactive/"
 
 // Construct full path
 fullPath = basePath + selectedFile.value
@@ -141,7 +141,7 @@ Oh and since we're here, did you know you can easily include a full width intera
 #| column: screen
 #| out-width: 100%
 
-knitr::include_url({"interactive/patients_traffic.html"})
+knitr::include_url({"/docs/interactive/patients_traffic.html"})
 
 ```
 
