@@ -78,9 +78,11 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ## Urgency
 
-<iframe src="images/24hourclocktime.html" width="100%" height="400px"></iframe>
 
 
+```{=html}
+<iframe src="https://johnuelg.github.io/er-reports/images/24clocktime.html" width="100%" height="500" frameborder="0"></iframe>
+```
 
 
 ## CTAS Level
