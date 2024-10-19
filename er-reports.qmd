@@ -78,7 +78,7 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ## Urgency
 
-<iframe src="images/24hourclocktime.html" width="100%" height="400px" data-external="1"></iframe>
+<iframe src="images/24hourclocktime.html" width="100%" height="400px"></iframe>
 
 
 
