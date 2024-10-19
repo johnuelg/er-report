@@ -2,7 +2,7 @@
 title: "Monthly Emergency Room (ER) Report"
 subtitle: "This report analyzes the emergency room operations at Taif Children's Hospital for the month of September 2024. The focus of this month's report is on understanding peak hours of patient visits, volume, average wait times, triage levels and operational metrics. Recommendations will be provided based on these findings to help enhance patient care and operational efficiency."
 format:
-  lumo-html: 
+  lumo-html:
     logo: "logo.png"                                     # Optional. Path to a logo displayed above the title
     primary-color: "#b5cef7"
     self-contained: true
@@ -19,6 +19,8 @@ date: last-modified
 This comprehensive report examines emergency department (ER) operations, focusing on critical key performance indicators (KPIs) that reflect the efficiency and effectiveness of patient care from triage to treatment.It analyzes patient visit metrics to measure overall demand and examines the time from **door to doctor**, providing insights into initial response times. The report also looks into the duration from **doctor to decision**, highlighting the speed at which healthcare providers can evaluate and decide on necessary interventions. For more information visit <a href='https://taifchildrenhospital/er'>Emergency Room (ER)
 
 While the default Quarto appearance **looks great**, there are [a few tweaks](https://www.productive-r-workflow.com/quarto-tricks) I always apply to elevate the report even further. Rather than manually adding them each time, I bundled everything into a custom format called [lumo](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template).
+
+
 
 
 ::: {.column-margin}
@@ -70,7 +72,13 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ```{r, fig.align='center', fig.width=6, fig.height=6, fig.align='left', echo=FALSE}
 
+
 ```
+
+
+## Urgency
+
+<iframe src="interactive/patient urgency/index.html" width="100%" height="400px" data-external="1"></iframe>
 
 
 
@@ -78,13 +86,37 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 You can also make a [boxplot](https://r-graph-gallery.com/89-box-and-scatter-plot-with-ggplot2.html), but please do not hide the underlying distribution! This is widely explain in my data-to-viz.com project in case you're not convinced 😋. Check the next tab to get convinced!
 
-<iframe src="interactive/ctas_month_waffle.html" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="interactive/ctas_month_waffle.html" width="100%" height="500px" data-external="1"></iframe>
 
 ## 24 Hour Clock
 See what's happening now that the individual data points are visible! Would be a shame to miss this.
 
-<iframe src="interactive/24clocktime.html" width="100%" height="600px" style="border:none;"></iframe>
 
+```{ojs}
+//| echo: false
+
+// Define options for HTML files
+viewof selectedFile = Inputs.select(
+  [
+    { value: "24clocktime.html", label: "24-Hour Clock Time" },
+    { value: "ctas_month_waffle.html", label: "CTAS Month Waffle" }
+  ],
+  {
+    label: "Select HTML file",
+    value: "24clocktime.html",
+    format: x => x.label
+  }
+)
+
+// Base path for HTML files
+basePath = "interactive/"
+
+// Construct full path
+fullPath = basePath + selectedFile.value
+
+// Create and return the iframe element
+html`<iframe src="${fullPath}" width="100%" height="500px" style="border:none;"></iframe>`
+```
 
 :::
 
@@ -109,16 +141,8 @@ Oh and since we're here, did you know you can easily include a full width intera
 #| column: screen
 #| out-width: 100%
 
-htmltools::tags$div(
-  style = "position: relative; width: 100%; height: 100%; overflow: hidden;",
-  htmltools::tags$iframe(
-    src = "interactive/patients_traffic.html", 
-    style = "position: absolute; top: 0; left: 0; width: 100%; height: 600px; border: 0; overflow: hidden;", 
-    scrolling = "no",  # Disable scrolling
-    allowfullscreen = TRUE,
-    frameBorder = "0"
-  )
-)
+knitr::include_url({"interactive/patients_traffic.html"})
+
 ```
 
 
