@@ -78,9 +78,9 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ## Urgency
 
-<iframe src="/docs/patient urgency/index.html" width="100%" height="400px" data-external="1"></iframe>
+<iframe src="images/24hourclocktime.html" width="100%" height="400px" data-external="1"></iframe>
 
-![](images/demo-jupyter.png){style="background-color: white; border: 1px solid #dee2e6; height: 625px;" fig-alt="Example output with title, author, and date. Below, the main section reads Seattle Precipitation by Day (2012 to 2016) with a toggleable section to show code and a heatmap of the precipitation by day."}
+
 
 
 ## CTAS Level
