@@ -80,10 +80,10 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 
 
-
+```{=html}
 <iframe src="https://johnuelg.github.io/er-reports/docs/patient%20urgency/index.html
 " width="100%" height="500px" data-external="1"></iframe>
-
+```
 
 
 ## CTAS Level
