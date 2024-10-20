@@ -87,7 +87,7 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 <iframe
   title="Embedded cell output"
-  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600"
+  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=500"
   style="width: 100%; max-width: 600px; height: 500px; clip-path: inset(10% 16.67% 10% 8.33%); float: left; margin-right: 30px;"
   frameborder="0"
   scrolling="no"
@@ -97,7 +97,7 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 ## Test I.I
 <iframe
   title="Embedded cell output"
-  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600"
+  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=500"
   style="width: 100%; max-width: 600px; height: 500px; clip-path: inset(5% 16.67% 15% 8.33%); float: left; margin-right: 20px;"
   frameborder="0"
   scrolling="no"
@@ -115,7 +115,8 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
   frameborder="0"
   scrolling="no"
   data-external="1"
-  style="clip-path: inset(8.33% 14.29% 8.33% 7.14%);"
+  style="clip-path: inset(8.33% 14.29% 8.33% 7.14%);
+  float: left; margin-right: 20px;"
 ></iframe>
 
 
