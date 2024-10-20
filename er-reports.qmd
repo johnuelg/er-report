@@ -94,6 +94,16 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
   data-external="1"
 ></iframe>
 
+## Test I.I
+<iframe
+  title="Embedded cell output"
+  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600"
+  style="width: 100%; max-width: 600px; height: 500px; clip-path: inset(5% 16.67% 15% 8.33%); float: left; margin-right: 20px;"
+  frameborder="0"
+  scrolling="no"
+  data-external="1"
+></iframe>
+
 
 ## Test II
 
