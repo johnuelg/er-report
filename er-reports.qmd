@@ -79,16 +79,6 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 
 
-## Test
-
-```{=html}
-<iframe width="380" height="400" src="https://www.devitoproject.org" title="Quarto Documentation"></iframe>
-```
-
-
-```{=html}
-<iframe width="380" height="400" src="https://joanjz.github.io" title="Quarto Documentation"></iframe>
-```
 
 ## Test I.I
 <iframe
@@ -211,12 +201,16 @@ And now let's use it on a graph:
 For a complete list of features, [visit the documentation](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)!
 
 Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc? 😍
+
 ```{r}
 #| column: screen
 #| out-width: 100%
 
-knitr::include_url({"/docs/interactive/patients_traffic.html"})
-
+htmltools::tags$iframe(
+  src = "https://rawcdn.githack.com/joanjz/report-er/f45aa29bb9ca58182c7f5efaebc212553b2e3052/interactive/patients_traffic.html",
+  style = "border: none; overflow: hidden; width: 100%; height: 850px;",
+  scrolling = "no"
+)
 ```
 
 
