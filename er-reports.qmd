@@ -5,7 +5,7 @@ format:
   lumo-html:
     embed-resources: true
     logo: "logo.png"                                     # Optional. Path to a logo displayed above the title
-    primary-color: "#b5cef7"
+    primary-color: "#2baae2"
     self-contained: true
     is-particlejs-enabled: true                          # Optional: display interactive particles in the document header background
 author: Joan Jimenez
@@ -17,7 +17,7 @@ date: last-modified
 
 ## Introduction
 
-This comprehensive report examines emergency department (ER) operations, focusing on critical key performance indicators (KPIs) that reflect the efficiency and effectiveness of patient care from triage to treatment.It analyzes patient visit metrics to measure overall demand and examines the time from **door to doctor**, providing insights into initial response times. The report also looks into the duration from **doctor to decision**, highlighting the speed at which healthcare providers can evaluate and decide on necessary interventions. For more information visit <a href='https://taifchildrenhospital/er'>Emergency Room (ER)
+This comprehensive report examines emergency department (ER) operations, focusing on critical **key performance indicators** (KPIs) that reflect the efficiency and effectiveness of patient care from triage to treatment.It analyzes patient visit metrics to measure overall demand and examines the time from **door to doctor**, providing insights into initial response times. The report also looks into the duration from **doctor to decision**, highlighting the speed at which healthcare providers can evaluate and decide on necessary interventions. For more information visit <a href='https://taifchildrenhospital/er'>Emergency Room (ER)
 
 While the default Quarto appearance **looks great**, there are [a few tweaks](https://www.productive-r-workflow.com/quarto-tricks) I always apply to elevate the report even further. Rather than manually adding them each time, I bundled everything into a custom format called [lumo](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template).
 
@@ -40,11 +40,11 @@ Analyze patterns in patient visits over time to identify peak hours, seasonal va
 
 Key Metrics:
 
-- Total Patient Visits: 12,500
-- Average Daily Visits: 139
-- Peak Hour: 5 PM – 8 PM
-- Percentage of Non-Urgent Visits: 30%
-- Percentage of Urgent Visits: 70%
+- Total Patient Visits: **12,500**
+- Average Daily Visits: **139**
+- Peak Hour: **5 PM – 8 PM**
+- Percentage of Non-Urgent Visits: **30%**
+- Percentage of Urgent Visits: **70%**
 - Average Wait Time (Door to Doctor): 20 minutes
 
 Notice that the code chunks are folded by default. You can adjust this behavior with the `code-fold` option in the document's YAML header.
@@ -81,69 +81,28 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 
 ## Test I.I
-<iframe
-  title="Embedded cell output"
-  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600"
-  style="width: 100%; max-width: 600px; height: 500px; clip-path: inset(5% 16.67% 15% 8.33%); float: left; margin-right: 20px;"
-  frameborder="0"
-  scrolling="no"
-  data-external="1"
-></iframe>
+
 
 
 ## Test II
 
-<iframe
-  title="Embedded cell output"
-  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600"
-  width="700"
-  height="600"
-  frameborder="0"
-  scrolling="no"
-  data-external="1"
-  style="clip-path: inset(8.33% 14.29% 8.33% 7.14%);
-  float: left; margin-right: 25px;"
-></iframe>
-
 
 ## Test III
-<iframe
-  title="Embedded cell output"
-  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600"
-  width="700"
-  height="600"
-  frameborder="0"
-  scrolling="no"
-  data-external="1"
-  style="clip-path: inset(8.33% 14.29% 8.33% 7.14%); float: left; margin: 0 20px 20px 40px;"
-></iframe>
 
 
 ## Test IV
 ::: {.panel-tabset}
 ## Visualization 1
-{{< iframe src="content/24clocktime.html" width="100%" height="500px" >}}
+
 ## Visualization 2
-{{< iframe src="content/24clocktime.html" width="100%" height="500px" >}}
+
 :::
+
 ## Test V
-{{< iframe src="content/patient-urgency/index.html" width="100%" height="500px" >}}
+
 
 
 ## Urgency
-
-<iframe
-  title="Embedded cell output"
-  src="https://embed.deepnote.com/6b779248-90ed-4913-ad0e-a8dafdfffbc0/0216adf0aa0442af8127532f3a62e154/572292a5e92e4913949cc8c3fdb347e5?height=600"
-  height="600"
-  width="700"
-  frameborder="0"
-  scrolling="no"
-  data-external="1"
-  style="border: none; position: absolute;  
-  clip: rect(50px, 600px, 550px, 50px);"
-</iframe>
-
 
 
 ## CTAS Level
@@ -152,40 +111,14 @@ You can also make a [boxplot](https://r-graph-gallery.com/89-box-and-scatter-plo
 
 <iframe src="./content/patient-urgency/index.html" width="100%" height="500px" data-external="1"></iframe>
 
-## 24 Hour Clock
-See what's happening now that the individual data points are visible! Would be a shame to miss this.
-
-
-```{ojs}
-//| echo: false
-
-// Define options for HTML files
-viewof selectedFile = Inputs.select(
-  [
-    { value: "24clocktime.html", label: "24-Hour Clock Time" },
-    { value: "ctas_month_waffle.html", label: "CTAS Month Waffle" }
-  ],
-  {
-    label: "Select HTML file",
-    value: "24clocktime.html",
-    format: x => x.label
-  }
-)
-
-// Base path for HTML files
-basePath = "docs/interactive/"
-
-// Construct full path
-fullPath = basePath + selectedFile.value
-
-// Create and return the iframe element
-html`<iframe src="${fullPath}" width="100%" height="500px" style="border:none;"></iframe>`
-```
 
 :::
 
 
-## ER Time Series
+
+
+
+## ER Time Trend
 
 I strongly advise to create a dataviz theme that fits your company's brand. Here is one:
 
