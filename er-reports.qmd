@@ -79,10 +79,6 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ```
 
-::: {raw-html}
-<iframe title="ER_Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNWZmMjRiNTAtZjUxYy00YTdhLWJmNWYtZmU1ZWRhM2M4MjNjIiwidCI6IjIxN2U4NzlmLWU5NmItNDA2ZS1hMzgxLWFlMDA4MDEwYWUzYyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
-:::
-
 
 
 
