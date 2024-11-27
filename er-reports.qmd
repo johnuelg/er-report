@@ -47,6 +47,9 @@ Key Metrics:
 - Percentage of Urgent Visits: **70%**
 - Average Wait Time (Door to Doctor): 20 minutes
 
+<iframe title="ER_Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNWZmMjRiNTAtZjUxYy00YTdhLWJmNWYtZmU1ZWRhM2M4MjNjIiwidCI6IjIxN2U4NzlmLWU5NmItNDA2ZS1hMzgxLWFlMDA4MDEwYWUzYyIsImMiOjl9&pageName=ReportSectionba65d0760bdc0e2c6363" frameborder="0" allowFullScreen="true"></iframe>
+
+
 Notice that the code chunks are folded by default. You can adjust this behavior with the `code-fold` option in the document's YAML header.
 
 
@@ -82,7 +85,6 @@ This is a good old scatterplot of the iris dataset. If you want to learn more ab
 
 ## Test I.I
 
-<iframe title="ER_Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNWZmMjRiNTAtZjUxYy00YTdhLWJmNWYtZmU1ZWRhM2M4MjNjIiwidCI6IjIxN2U4NzlmLWU5NmItNDA2ZS1hMzgxLWFlMDA4MDEwYWUzYyIsImMiOjl9&pageName=ReportSectionba65d0760bdc0e2c6363" frameborder="0" allowFullScreen="true"></iframe>
 
 
 
